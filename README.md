@@ -1,0 +1,1 @@
+This Docker image is designed to enhance your GitLab CI/CD pipeline by facilitating the building of Docker images directly within your GitLab runner. It streamlines the integration and deployment process, ensuring that your Docker builds are efficient and seamlessly integrated with your GitLab CI workflows. Perfect for teams looking to optimize their CI/CD pipeline with Docker.
