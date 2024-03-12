@@ -1,10 +1,6 @@
 # Use Alpine Linux as the base image
 FROM alpine:3.17
 
-# Install CA Certificates 
-RUN apk --no-cache add ca-certificates \
-  && update-ca-certificates
-
 # Install Docker
 RUN apk add --no-cache docker
 
@@ -12,7 +8,7 @@ RUN apk add --no-cache docker
 RUN apk add --no-cache curl
 
 # Set the version of Docker Compose you wish to install
-ARG COMPOSE_VERSION=2.24.6
+ARG COMPOSE_VERSION=2.23.3
 
 # Determine the architecture for the Docker Compose binary
 RUN curl -L "https://github.com/docker/compose/releases/download/v${COMPOSE_VERSION}/docker-compose-linux-x86_64" -o /usr/local/bin/docker-compose && \
