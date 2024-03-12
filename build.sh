@@ -2,7 +2,7 @@
 
 TAGNAME="docker-compose"
 ACCOUNT="jetstylehub"
-VESRION=3.17
+VESRION=v3.17.3
 
 docker buildx build --platform linux/amd64 -t $TAGNAME .
 
