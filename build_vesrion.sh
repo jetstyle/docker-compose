@@ -4,7 +4,7 @@ TAGNAME="docker-compose"
 ACCOUNT="jetstylehub"
 
 # change version when you build image 
-VESRION=3.17.1
+VESRION=v3.17.1
 
 docker buildx build --platform linux/amd64 -t $TAGNAME .
 
